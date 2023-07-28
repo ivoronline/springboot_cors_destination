@@ -5,13 +5,17 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+@CrossOrigin
 @Controller
 public class MyController {
 
+  //=======================================================================
+  // DESTINATION
+  //=======================================================================
   @ResponseBody
-  @RequestMapping("/Hello")
-  public String hello() {
-    return "Hello from Controller";
+  @RequestMapping("/Destination")
+  public String destination() {
+    return "Hello from Destination Controller";
   }
 
 }
